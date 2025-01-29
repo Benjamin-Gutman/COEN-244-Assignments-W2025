@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+#ifndef COURSESECTION_H_
+#define COURSESECTION_H_
+
+class CourseSection{
+private:
+  string courseSectionId;
+  string courseTitle;
+  string courseDescription;
+  int courseCapacity;
+
+public:
+  //Constructors
+  CourseSection();
+  CourseSection(string, string, string, int);
+
+  //Getters
+  void setSectionId(string);
+  void setSectionTitle(string);
+  void setSectionDescription(string);
+  void setSectionCapacity(int);
+  string getSectionId();
+  string getSectionTitle();
+  string getSectionDescription();
+  int getSectionCapacity();
+
+  //Member Functions
+ void printCourseInformation();
+
+};
+
+#endif
