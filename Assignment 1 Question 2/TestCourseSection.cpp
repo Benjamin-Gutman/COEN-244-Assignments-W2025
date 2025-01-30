@@ -10,7 +10,7 @@
 #include "CourseSection.h"
 
 
-int main(){
+/*int main(){
 
 	string classId = "Coen244";
 	string classTitle = "Programming Methodology 2";
@@ -61,6 +61,6 @@ int main(){
 
 
 
-}
+}*/
 
 
