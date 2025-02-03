@@ -1,10 +1,5 @@
-/*
- * TestProfessor.cpp
- *
- *  Created on: Jan 29, 2025
- *      Author: benjamin
- */
-
+//Benjamin Gutman 40315265
+//Jiyong Jeon 40314593
 
 #include <string>
 #include <iostream>

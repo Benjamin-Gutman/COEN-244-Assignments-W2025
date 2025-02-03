@@ -1,18 +1,12 @@
-/*
- * TestCourseSection.cpp
- *
- *  Created on: Jan 28, 2025
- *      Author: benjamin
- */
-
-
+//Benjamin Gutman 40315265
+//Jiyong Jeon 40314593
 
 #include "CourseSection.h"
 
 
-/*int main(){
+int main(){
 
-	string classId = "Coen244";
+	/*string classId = "Coen244";
 	string classTitle = "Programming Methodology 2";
 	string classDescription = "This class covers more advanced topics in the language c++";
 	int classCapacity = 100;

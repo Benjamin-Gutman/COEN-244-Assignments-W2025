@@ -1,10 +1,5 @@
-/*
- * TestRomm.cpp
- *
- *  Created on: Feb 2, 2025
- *      Author: jiyongjeon
- */
-
+//Benjamin Gutman 40315265
+//Jiyong Jeon 40314593
 
 #include <iostream>
 #include <string>

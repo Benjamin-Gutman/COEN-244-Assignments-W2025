@@ -1,8 +1,6 @@
 //Benjamin Gutman 40315265
 //Jiyong Jeon 40314593
 
-
-
 #include "CourseSection.h"
 #include<iostream>
 #include <string>
