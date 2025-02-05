@@ -16,9 +16,8 @@ vector<Student> registrationList(string courseId, vector<CourseSection> courses,
 	for (int i =0; i < courses.size(); i++){
 		CourseSection TempClass = courses[i];
 		if (TempClass.getSectionId() == courseId){
-			for (int j =0; j < Students[i].size(); j++){
-				studentList[j] = Students[i][j];
-			}
+				studentList = Students[i];
+
 		}
 
 	}
@@ -27,13 +26,11 @@ vector<Student> registrationList(string courseId, vector<CourseSection> courses,
 
 
 vector<CourseSection> coursesTaught(string professorId, vector<Professor> professorList, vector<vector<CourseSection>> professorAssignment){
-	vector<Professor> CourseofProfessor;
+	vector<CourseSection> CourseofProfessor;
 	for (int i =0; i < professorList.size(); i++){
 		Professor TempProfessor = professorList[i];
 		if (TempProfessor.getId() == professorId){
-			for (int j =0; j < professorAssignment[i].size(); j++){
-				CourseofProfessor[j] = professorAssignment[i][j];
-			}
+				CourseofProfessor = professorAssignment[i];
 		}
 
 	}
@@ -90,13 +87,13 @@ void findProfessor(string professorId, string courseId, vector<Professor> profes
 	cout << professorId  << " is not teaching the course " << courseId << endl;
 }
 
-void findRoom(string roomId, string courseId, vector<CourseSection> courseList, vector<vector<Room>> courseAssignment){
+void findRoom(int roomId, string courseId, vector<CourseSection> courseList, vector<vector<Room>> courseAssignment){
 	for (int i =0; i < courseList.size(); i++){
 	CourseSection tempCourse = courseList[i];
 		if (tempCourse.getSectionId() == courseId){
 			for (int j =0; j < courseAssignment[i].size(); j++){
 				Room tempRoom = courseAssignment[i][j];
-				if (tempCourse.getSectionId() == courseId){
+				if (tempRoom.getId() == roomId){
 					cout << courseId  << " is being taught in " << roomId << endl;
 					return;
 				}
@@ -117,8 +114,45 @@ int main(){
 	CourseSection Class2("ELEC 273", "Basic Circuit Analysis", "Learn how to analyze circuit designs", 100);
 	CourseSection Class3("COEN 311", "Computer Organization and Software", "Learn how computers organize their memory", 100);
 	CourseSection Class4("ENGR 233", "Applied Advanced Calculus", "Learn the principles of vector calculus", 100);
-	Professor Teacher1("23453456", "Fadi", "El Hassan", "Fadi.Hassan@gmail.com", "1455 De Maisonneuve Ouest");
-	Professor Teacher2 ("74565432", "Abdelwahab", "Hamou Lhadj", "Abdel.Lhadj@yahoo.com", "1515 Saint-Catherine");
+	Professor Teacher1("23453456", "Fadi", "El Hassan", "1455 De Maisonneuve Ouest","Fadi.Hassan@gmail.com");
+	Professor Teacher2 ("74565432", "Abdelwahab", "Hamou Lhadj", "1515 Saint-Catherine", "Abdel.Lhadj@yahoo.com");
+	Student Student1("40315265", "Benjamin", "Gutman","258 Berlioz", "BenjaminGutman@icloud.com" );
+	Student Student2("40314593", "Jiyong", "Jeon", "1608 Saint-Catherine", "Jiyong.Jeon@gmail.com");
+	Student Student3("62538390", "John", "Doe", "349 Jaques Cartier", "JohnDoe@outlook.com");
+	Student Student4("66039521", "Maria", "Jose", "220 That st", "MariaJose@yahoo.com");
+	Student Student5("44069454", "Will", "Navidson", "2245 Ash Tree Lane", "NavidsonPhotography@hotmail.com");
+	Room Room1(349, 120);
+	Room Room2(238, 120);
+	Room Room3(127, 120);
+	Room Room4(516, 120);
+
+
+	courseList.push_back(Class1);
+	courseList.push_back(Class2);
+	courseList.push_back(Class3);
+	courseList.push_back(Class4);
+	registration[0].push_back(Student1);
+	registration[0].push_back(Student2);
+	registration[1].push_back(Student1);
+	registration[1].push_back(Student2);
+	registration[1].push_back(Student3);
+	registration[2].push_back(Student1);
+	registration[2].push_back(Student2);
+	registration[2].push_back(Student3);
+	registration[2].push_back(Student4);
+	registration[3].push_back(Student1);
+	registration[3].push_back(Student2);
+	registration[3].push_back(Student3);
+	registration[3].push_back(Student4);
+	registration[3].push_back(Student5);
+
+
+
+
+
+
+
+
 
 
 

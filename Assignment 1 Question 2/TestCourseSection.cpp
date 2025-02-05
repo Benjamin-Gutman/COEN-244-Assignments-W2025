@@ -4,9 +4,9 @@
 #include "CourseSection.h"
 
 
-int main(){
+/*int main(){
 
-	/*string classId = "Coen244";
+	string classId = "Coen244";
 	string classTitle = "Programming Methodology 2";
 	string classDescription = "This class covers more advanced topics in the language c++";
 	int classCapacity = 100;
