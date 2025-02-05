@@ -1,9 +1,5 @@
-/*
- * Room.h
- *
- *  Created on: Feb 2, 2025
- *      Author: jiyongjeon
- */
+//Benjamin Gutman 40315265
+//Jiyong Jeon 40314593
 
 #ifndef ROOM_H_
 #define ROOM_H_

@@ -1,17 +1,5 @@
-//Write a class called Student that represents the students of a university.
-//A student is identified using a student id (string), first name (string), last name (string),
-//address (string), and email (string). The class should have one or more constructors,
-//accessing member functions, a function that prints information about a student. Write a
-//driver (i.e., a program with a main function) to test the Student class.
-
-//============================================================================
-// Name        : Student.cpp
-// Author      : JY
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
+//Benjamin Gutman 40315265
+//Jiyong Jeon 40314593
 
 #include <iostream>
 #include <string>

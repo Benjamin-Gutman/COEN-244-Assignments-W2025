@@ -1,16 +1,5 @@
-//============================================================================
-// Name        : COEN244.cpp
-// Author      : JY
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
-//Write another class called Room, which represents class rooms. A room
-//has an id (int), a capacity (int). Similar to Q1, Q2 and Q3, provide
-//all the components of the class Room. In addition, you need to write a drive
-//to test the class Room.
-
+//Benjamin Gutman 40315265
+//Jiyong Jeon 40314593
 
 #include <iostream>
 #include "Room.h"

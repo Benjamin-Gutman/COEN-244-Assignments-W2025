@@ -40,6 +40,8 @@ int main(){
 		cout << "Capacity test passed" << endl;
 	}
 
+
+	//testing parametrized constructor
 	if (classId == Class2.getSectionId()){
 		cout << "ID test passed" << endl;
 	}

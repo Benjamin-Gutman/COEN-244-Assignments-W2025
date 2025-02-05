@@ -51,6 +51,7 @@ int main(){
 		cout << "Email test passed" << endl;
 	}
 
+	//testing parametrized constructor
 	if (ID == professor2.getId()){
 		cout << "ID test passed" << endl;
 	}
