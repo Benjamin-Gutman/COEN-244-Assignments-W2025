@@ -5,6 +5,8 @@
 #include <string>
 using namespace std;
 
+
+//Default constructor
 Professor :: Professor(){
 	Id = "";
 	firstName = "";
@@ -13,6 +15,7 @@ Professor :: Professor(){
 	email = "";
 }
 
+//parametrized constructor
 Professor :: Professor(string profId, string fname, string lname, string profAddress, string profEmail){
 	Id = profId;
 	firstName = fname;
@@ -21,6 +24,8 @@ Professor :: Professor(string profId, string fname, string lname, string profAdd
 	email = profEmail;
 }
 
+
+//setters
 void Professor :: setId(string ID){
 	Id = ID;
 }
@@ -41,6 +46,7 @@ void Professor :: setEmail(string profEmail){
 	email = profEmail;
 }
 
+//getters
 
 string Professor :: getId(){
 	return Id;
@@ -61,6 +67,8 @@ string Professor :: getAddress(){
 string Professor :: getEmail(){
 	return email;
 }
+
+//Member function
 
 void Professor :: printInfo(){
 	cout << firstName << "\n" << lastName << "\n" << Id << "\nAddress: " << address << "\nEmail: " << email << endl;

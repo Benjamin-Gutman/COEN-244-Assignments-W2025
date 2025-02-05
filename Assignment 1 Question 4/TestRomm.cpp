@@ -12,6 +12,7 @@
 
 using namespace std;
 
+
 int main() {
     // Test Data
     int roomId = 101;
@@ -48,3 +49,4 @@ int main() {
 
     return 0;
 }
+

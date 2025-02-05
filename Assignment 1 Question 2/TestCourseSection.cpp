@@ -1,18 +1,25 @@
 //Benjamin Gutman 40315265
 //Jiyong Jeon 40314593
 
-#include "CourseSection.h"
+/*#include "CourseSection.h"
 
 
 int main(){
+	//Set some variables to test functions with
 
-	/*string classId = "Coen244";
+	string classId = "Coen244";
 	string classTitle = "Programming Methodology 2";
 	string classDescription = "This class covers more advanced topics in the language c++";
 	int classCapacity = 100;
+
+	//
 	CourseSection Class1;
 	CourseSection Class2(classId, classTitle, classDescription, classCapacity);
 
+	//Test if the default constructor initializes as intended
+	Class1.printCourseInformation();
+
+	//The following series of function calls tests the setters and getters
 	Class1.setSectionId(classId);
 	if (classId == Class1.getSectionId()){
 		cout << "ID test passed" << endl;
@@ -49,7 +56,7 @@ int main(){
 		cout << "Capacity test passed" << endl;
 	}
 
-
+	//Test the print function, both prints should be identical
 	Class1.printCourseInformation();
 	Class2.printCourseInformation();
 

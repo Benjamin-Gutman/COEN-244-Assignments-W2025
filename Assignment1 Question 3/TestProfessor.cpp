@@ -1,7 +1,7 @@
 //Benjamin Gutman 40315265
 //Jiyong Jeon 40314593
 
-#include <string>
+/*#include <string>
 #include <iostream>
 #include "Professor.h"
 using namespace std;
@@ -9,14 +9,23 @@ using namespace std;
 
 int main(){
 
+
+	//Initializing some variables used to test against the results of the functions
 	string ID = "aed_ttre_3324";
 	string fname = "Gale";
 	string lname = "Boetticher";
 	string address = "6353 Juan Tabo, appt 6";
 	string email = "G.Boetticher@gmail.com";
+
+	//test both constructors
 	Professor professor1;
 	Professor professor2(ID, fname, lname, address, email);
 
+	//Test if the default constructor provides the desired initialization
+	professor1.printInfo();
+
+
+	//Tests the setters and getters
 	professor1.setId(ID);
 	if (ID == professor1.getId()){
 		cout << "ID test passed" << endl;
@@ -63,10 +72,12 @@ int main(){
 		}
 
 
+
+	//Print the info of both classes now to test the setters and parametrized constructor
 	professor1.printInfo();
 	professor2.printInfo();
 
 
 
-}
+}*/
 
