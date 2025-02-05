@@ -18,18 +18,26 @@ private:
 	string email;
 
 public:
+
+	//constructors
 	Professor();
 	Professor(string, string, string, string, string);
+
+	//setters
 	void setId(string);
 	void setFirstName(string);
 	void setLastName(string);
 	void setAddress(string);
 	void setEmail(string);
+
+	//getters
 	string getId();
 	string getFirstName();
 	string getLastName();
 	string getAddress();
 	string getEmail();
+
+	//member functions
 	void printInfo();
 
 

@@ -20,11 +20,13 @@ public:
   CourseSection();
   CourseSection(string, string, string, int);
 
-  //Getters
+  //Setters
   void setSectionId(string);
   void setSectionTitle(string);
   void setSectionDescription(string);
   void setSectionCapacity(int);
+
+  //Getters
   string getSectionId();
   string getSectionTitle();
   string getSectionDescription();
